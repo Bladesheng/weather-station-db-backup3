@@ -14,7 +14,7 @@ Docker container with cronjob, that runs python script once a day. The script cr
 ```yaml
 services:
     db-backup:
-        image: ghcr.io/bladesheng/weather-db-backup3:latest
+        image: ghcr.io/weather-blade/weather-db-backup:latest
         restart: unless-stopped
         depends_on:
             - db
