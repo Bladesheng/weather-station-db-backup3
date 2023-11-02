@@ -1,4 +1,4 @@
-# weather-station-db-backup3
+# weather-db-backup
 
 ## About this repository
 

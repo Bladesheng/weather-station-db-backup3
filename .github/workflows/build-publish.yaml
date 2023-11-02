@@ -33,7 +33,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/bladesheng/weather-db-backup3
+            ghcr.io/weather-blade/weather-db-backup
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
 
