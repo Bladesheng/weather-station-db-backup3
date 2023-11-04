@@ -18,11 +18,9 @@ services:
         restart: unless-stopped
         depends_on:
             - db
-        env_file:
-            - .env
         environment:
-            - DATABASE_URL=${DATABASE_URL}
-            - GDRIVE_FOLDER_ID=${GDRIVE_FOLDER_ID}
+            DATABASE_URL: ${DATABASE_URL}
+            GDRIVE_FOLDER_ID: ${GDRIVE_FOLDER_ID}
         volumes:
             - ./SA_key.json:/app/SA_key.json:ro
 
